@@ -6,14 +6,14 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.first
-    @user_answer = params[:user_answer]
-    respond_to do |format|
+    # @user_answer = params[:user_answer]
+    # respond_to do |format|
 
 
-      format.html
-      # { redirect_to articles_path, :notice => "Successfully created article" }
-      format.js   # renders create.js.erb, which could be used to redirect via javascript
-    end
+    #   format.html
+    #   # { redirect_to articles_path, :notice => "Successfully created article" }
+    #   format.js   # renders create.js.erb, which could be used to redirect via javascript
+    # end
   end
 #
 end
