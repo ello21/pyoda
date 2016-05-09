@@ -1,0 +1,60 @@
+<h1>Teach You I Will</h1>
+<form id="training" name="training">
+  <table>
+    <tr id="input-window">
+      <td>
+        <input id="box" type="text" name="input" size="30" value= "<%= @question.text %>" >
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+        <%= link_to "<button class='btn btn-warning' >Train Me</button>".html_safe, question_path, :id=>"train-me-btn"%>
+
+        <br>
+        <div class='calc-row'>
+          <input type="button" name="sin"   value="  sin  " class="btn btn-info">
+          <input type="button" name="cos"   value="  cos  " class="btn btn-info">
+          <input type="button" name="the"   value="  the  " class="btn btn-info">
+          <input type="button" name="tan"   value="  tan  " class="btn btn-info">
+        </div>
+
+        <div class='calc-row'>
+          <input type="button" name="one"   value="  1  " class="btn btn-warning" OnClick="training.input.value = '1'">
+          <input type="button" name="two"   value="  2  " class="btn btn-warning"OnCLick="training.input.value = '2'">
+          <input type="button" name="three" value="  3  " class="btn btn-warning" OnClick="training.input.value = 'Do or do not. There is no try.'">
+          <input type="button" name="pi"  value="  √  " class="btn btn-info">
+          <input type="button" name="plus"  value="  +  " class="btn btn-info">
+        </div>
+
+        <div class='calc-row'>
+          <input type="button" name="four"  value="  4  " class="btn btn-info">
+          <input type="button" name="five"  value="  5  " class="btn btn-info">
+          <input type="button" name="six"   value="  6  " class="btn btn-info">
+          <input type="button" name="abs" value="  |x|  " class="btn btn-info">
+          <input type="button" name="minus" value="  -  " class="btn btn-info">
+        </div>
+
+        <div class='calc-row'>
+          <input type="button" name="seven" value="  7  " class="btn btn-info">
+          <input type="button" name="eight" value="  8  " class="btn btn-info">
+          <input type="button" name="nine"  value="  9  " class="btn btn-info">
+          <input type="button" name="percent" value="  %  " class="btn btn-info" >
+          <input type="button" name="times" value="  x  " class="btn btn-info">
+      </div>
+
+        <div class='calc-row'>
+          <input type="button" name="clear" value="  c  " class="btn btn-info">
+          <input type="button" name="zero"  value="  0  " class="btn btn-info">
+          <input type="button" name="div"   value="  /  " class="btn btn-info">
+           <input type="button" name="DoIt"  value="  =  " class="btn btn-info">
+          <input type="button" name="Ans"  value="  Ans  "  class="btn btn-warning" OnClick="training.input.value = eval(training.input.value)">
+      </div>
+
+      </td>
+    </tr>
+  </table>
+</form>
+
+

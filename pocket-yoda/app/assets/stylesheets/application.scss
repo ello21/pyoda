@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+ /*Custom bootstrap variables must be set or imported before bootstrap itself */
+@import "bootstrap";
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input#box {
+  height: 180px;
+  background-image: url("yoda-green-outline.png");
+  background-repeat: no-repeat;
+  background-size: 250px 150px;
+  text-align: left;
+  vertical-align: bottom;
+  text-indent: 2px;
+  color: green;
+}
+
+input#box:focus {
+  background-image: none;
+}
+
+form#training {
+  width: 300px;
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+  width: 280px;
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  height: 500px;
+}
+
+#train-me-btn{
+  margin-top:3px;
+  background: white;
+}
+
+#input-window{
+  border-radius: 25px;
+
+}
+
+input {
+  margin: 2px 2px;
+}
+
+.calc-row {
+  margin: 2px auto;
+}

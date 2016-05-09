@@ -1,0 +1,51 @@
+<h1>Teach You I Will</h1>
+<form name="training">
+  <table border=4>
+    <tr>
+      <td>
+        <input id="box" type="text" name="input" size="30" value=<%= @question %>>
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= link_to "<button>Add</button>".html_safe, new_admin_course_path, :id=>"open-contacts-dialog-btn", :class=>"inbox-sf-add-btn tip" %>
+
+        <%= button_to "Train Me", :id => "train-me-btn",
+      :class => "", :method => :get %>
+        <br>
+        <input type="button" name="sin"   value="  sin  " OnClick="training.input.value += '0'">
+        <input type="button" name="cos"   value="  cos  " OnCLick="training.input.value += '0'">
+        <input type="button" name="the"   value="  the  " OnClick="training.input.value += '0'">
+        <input type="button" name="tan"   value="  tan  " OnClick="training.input.value += '0'">
+        <br>
+        <input type="button" name="one"   value="  1  " OnClick="training.input.value += '1'">
+        <input type="button" name="two"   value="  2  " OnCLick="training.input.value += '2'">
+        <input type="button" name="three" value="  3  " OnClick="training.input.value += '3'">
+        <input type="button" name="pi"  value="  √  " OnClick="training.input.value += ' + '">
+        <input type="button" name="plus"  value="  +  " OnClick="training.input.value += ' + '">
+        <br>
+        <input type="button" name="four"  value="  4  " OnClick="training.input.value += '4'">
+        <input type="button" name="five"  value="  5  " OnCLick="training.input.value += '5'">
+        <input type="button" name="six"   value="  6  " OnClick="training.input.value += '6'">
+        <input type="button" name="abs" value="  |x|  " OnClick="training.input.value += '0'">
+        <input type="button" name="minus" value="  -  " OnClick="training.input.value += ' - '">
+        <br>
+        <input type="button" name="seven" value="  7  " OnClick="training.input.value += '7'">
+        <input type="button" name="eight" value="  8  " OnCLick="training.input.value += '8'">
+        <input type="button" name="nine"  value="  9  " OnClick="training.input.value += '9'">
+        <input type="button" name="percent" value="  %  " OnClick="training.input.value += ' 0 '">
+        <input type="button" name="times" value="  x  " OnClick="training.input.value += ' * '">
+        <br>
+        <input type="button" name="clear" value="  c  " OnClick="training.input.value = ''">
+        <input type="button" name="zero"  value="  0  " OnClick="training.input.value += '0'">
+        <input type="button" name="div"   value="  /  " OnClick="training.input.value += ' / '">
+         <input type="button" name="DoIt"  value="  =  " OnClick="training.input.value = eval(training.input.value)">
+        <input type="button" name="Ans"  value="  Ans  " OnClick="training.input.value = eval(training.input.value)">
+        <br>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
